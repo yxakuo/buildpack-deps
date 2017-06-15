@@ -1,0 +1,13 @@
+FROM yxakuo/py3_AP_library
+
+MAINTAINER Allen tGuo
+
+
+RUN mkdir /src
+VOLUME /src
+COPY /files/apps.py /src/
+RUN chmod +x /src/apps.py
+WORKDIR /src/
+
+ENTRYPOINT ["python3"]
+CMD ["apps.py"]
