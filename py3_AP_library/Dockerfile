@@ -1,8 +1,7 @@
 FROM yxakuo/base_py3
+# py3_AP_library
 
 MAINTAINER Allen tGuo
-
-RUN pip install --upgrade pip
 
 RUN pip install contextlib2 \
  && pip install raven
@@ -20,6 +19,7 @@ RUN pip install requests \
  && pip install numpy \
  && pip install python-dateutil \
  && pip install pandas \
- && pip install astropy
+ && pip install astropy \
+ && pip install bs4
 
 RUN pip install tushare
