@@ -1,4 +1,4 @@
-FROM yxakuo/base_py3
+FROM yxakuo/buildpack-deps:base_py3
 # py3_AP_library
 
 MAINTAINER Allen tGuo
