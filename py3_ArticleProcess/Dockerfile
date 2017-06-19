@@ -6,7 +6,7 @@ MAINTAINER Allen tGuo
 
 RUN mkdir /src
 VOLUME /src
-COPY /files/apps.py /src/
+#COPY /files/apps.py /src/
 RUN chmod +x /src/apps.py
 WORKDIR /src/
 
