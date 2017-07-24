@@ -20,6 +20,9 @@ RUN pip install requests \
  && pip install python-dateutil \
  && pip install pandas \
  && pip install astropy \
- && pip install bs4
+ && pip install bs4 \
+ && pip install sqlalchemy \
+ && pip install pymysql
+
 
 RUN pip install tushare
