@@ -4,7 +4,8 @@ FROM yxakuo/buildpack-deps:base_py3
 MAINTAINER Allen tGuo
 
 RUN pip install contextlib2 \
- && pip install raven
+ && pip install raven \
+ && pip install colorama
 
 RUN pip install requests \
  && pip install lxml \
