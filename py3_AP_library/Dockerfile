@@ -5,7 +5,8 @@ MAINTAINER Allen tGuo
 
 RUN pip install contextlib2 \
  && pip install raven \
- && pip install colorama
+ && pip install colorama \
+ && pip install mysqlclient
 
 RUN pip install requests \
  && pip install lxml \
