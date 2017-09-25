@@ -1,14 +1,11 @@
 FROM yxakuo/buildpack-deps:py3_AP_library
 # py3_ArticleProcess
 
-MAINTAINER Allen tGuo
-
-
-
+MAINTAINER Allen tGuo(yxakuo@hotmail.com)
 
 RUN mkdir /src
 VOLUME /src
-#COPY /files/apps.py /src/
+COPY /src/apps.py /src/
 RUN chmod +x /src/apps.py
 WORKDIR /src/
 

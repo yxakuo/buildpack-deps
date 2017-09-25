@@ -9,7 +9,7 @@ ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.BackuP
+RUN rm /etc/apt/sources.list
 COPY files/sources.list.jessie /etc/apt/sources.list
 
 RUN mkdir -p ~/.pip \
