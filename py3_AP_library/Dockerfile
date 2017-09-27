@@ -3,28 +3,31 @@ FROM yxakuo/buildpack-deps:base_py3
 
 MAINTAINER Allen tGuo
 
-RUN pip install contextlib2 \
- && pip install raven \
- && pip install colorama \
- && pip install mysqlclient
+RUN pip install --no-cache-dir \
+    contextlib2 \
+    raven \
+    colorama \
+    mysqlclient
 
-RUN pip install requests \
- && pip install lxml \
- && pip install redis \
- && pip install vine \
- && pip install amqp \
- && pip install kombu \
- && pip install six \
- && pip install pytz \
- && pip install tzlocal \
- && pip install apscheduler \
- && pip install numpy \
- && pip install python-dateutil \
- && pip install pandas \
- && pip install astropy \
- && pip install bs4 \
- && pip install sqlalchemy \
- && pip install pymysql
+RUN pip install --no-cache-dir \
+    requests \
+    lxml \
+    redis \
+    vine \
+    amqp \
+    kombu \
+    six \
+    pytz \
+    tzlocal \
+    apscheduler \
+    numpy \
+    python-dateutil \
+    pandas \
+    astropy \
+    bs4 \
+    sqlalchemy \
+    pymysql
 
 
-RUN pip install tushare
+RUN pip install --no-cache-dir \
+    tushare
