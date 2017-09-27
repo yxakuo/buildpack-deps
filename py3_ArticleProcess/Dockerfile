@@ -1,4 +1,4 @@
-FROM yxakuo/buildpack-deps:py3_AP_library
+FROM yxakuo/buildpack-deps:python-3.6_AP-library
 # py3_ArticleProcess
 
 MAINTAINER Allen tGuo(yxakuo@hotmail.com)
