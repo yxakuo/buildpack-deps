@@ -23,7 +23,7 @@ RUN set -x \
     && GNUPGHOME="$(mktemp -d)" \
     && export GNUPGHOME \
     && apk add --no-cache curl gnupg tzdata \
-    && cp /usr/share/zoneinfo/Europe/Brussels /etc/localtime \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" >  /etc/timezone \
     && curl --output phpMyAdmin.tar.gz --location $URL \
     && curl --output phpMyAdmin.tar.gz.asc --location $URL.asc \
